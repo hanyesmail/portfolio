@@ -13,7 +13,7 @@ import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
 
 export const DATA = {
-  name: "Hany Mahmoud",
+  name: "Hany Mahmoud Esmail",
   initials: "HM",
   url: "https://hanymahmoud.dev",
   location: "Cairo, Egypt",
