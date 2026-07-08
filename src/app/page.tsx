@@ -19,15 +19,25 @@ export default function Page() {
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
-            <div className="gap-2 flex flex-col order-2 md:order-1">
+            <div className="gap-1 flex flex-col order-2 md:order-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                text={DATA.name}
               />
               <BlurFadeText
                 className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
+                delay={BLUR_FADE_DELAY}
+                text={DATA.title}
+              />
+              <BlurFadeText
+                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
+                delay={BLUR_FADE_DELAY}
+                text={DATA.subTitle}
+              />
+              <BlurFadeText
+                className="text-muted-foreground max-w-[600px] md:text-sm sm:text-s"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />

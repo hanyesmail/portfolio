@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, X } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -13,13 +13,17 @@ import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
 
 export const DATA = {
-  name: "Hany Mahmoud Esmail",
+  name: "Hany Mahmoud",
   initials: "HM",
   url: "https://hanymahmoud.dev",
   location: "Cairo, Egypt",
   locationLink: "https://maps.google.com/?q=Cairo,Egypt",
+  title:
+    "Senior Mobile Software Engineer",
+  subTitle:
+    "Flutter • iOS • Enterprise Mobile Applications",
   description:
-    "Senior Mobile Software Engineer specializing in Flutter and iOS development.",
+    "Building scalable mobile applications for Android and iOS used by millions of customers across the GCC.",
   summary:
     "Senior Mobile Software Engineer with 14+ years of software engineering experience and 6+ years specializing in mobile application development. Extensive experience designing and delivering enterprise-scale mobile applications using Flutter, Dart and Swift, with expertise spanning native iOS development, Flutter application development, and large-scale migration projects. Proven track record of building scalable mobile solutions, integrating complex business workflows, payment gateways, digital wallets, and third-party services while applying Clean Architecture, GetX, RESTful APIs, and CI/CD best practices. Recognized for solving complex technical challenges, mentoring development teams, and delivering high-quality mobile applications that drive business value. Currently expanding expertise in ASP.NET Core and modern backend development to complement enterprise mobile engineering experience.",
   avatarUrl: "/me.png",
@@ -49,12 +53,23 @@ export const DATA = {
         icon: Icons.github,
         navbar: true,
       },
-
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/hany-mahmoud-6b81aa123/",
         icon: Icons.linkedin,
         navbar: true,
+      },
+      X: {
+        name: "",
+        url: "",
+        icon: Icons.x,
+        navbar: false,
+      },
+      YouTube: {
+        name: "",
+        url: "",
+        icon: Icons.youtube,
+        navbar: false,
       },
       email: {
         name: "Send Email",
