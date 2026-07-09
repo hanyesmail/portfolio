@@ -75,7 +75,7 @@ export function ProjectCard({
               loop
               muted
               playsInline
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-fit"
             />
           ) : image ? (
             <ProjectImage src={image} alt={title} />
