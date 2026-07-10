@@ -21,21 +21,23 @@ export default function ContactSection() {
       </div>
       <div className="relative flex flex-col items-center gap-4 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          Get in Touch
+          Let's Connect
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          Want to chat? Just shoot me a dm{" "}
-          <Link
-            href={DATA.contact.social.X.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-          >
-            with a direct question on twitter
-          </Link>{" "}
-          and I&apos;ll respond whenever I can. I will ignore all
-          soliciting.
+          I'm always interested in discussing mobile engineering, Flutter, iOS development, enterprise applications, or new career opportunities. Feel free to reach out via email or connect with me on LinkedIn.
         </p>
+        <Link
+          href={`mailto:${DATA.contact.email}`}
+          className="hover:text-primary transition-colors"
+        >
+          📧 {DATA.contact.email}
+        </Link>
+        <Link
+          href="tel:+201061253785"
+          className="hover:text-primary transition-colors"
+        >
+          📱 +20 106 125 3785
+        </Link>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export default function ProjectsSection() {
 
                         />
                         <div className="border bg-primary z-10 rounded-xl px-4 py-1">
-                            <span className="text-background text-sm font-medium">My Projects</span>
+                            <span className="text-background text-sm font-medium">Projects</span>
                         </div>
                         <div
                             className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent"
@@ -23,15 +23,13 @@ export default function ProjectsSection() {
                         />
                     </div>
                     <div className="flex flex-col gap-y-3 items-center justify-center">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Check out my latest work</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Featured Mobile Applications</h2>
                         <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-                            I&apos;ve worked on a variety of projects, from simple
-                            applications to complex applications. Here are my
-                            favorites.
+                            Built and delivered enterprise-grade mobile applications used by thousands of customers across the GCC. From retail e-commerce platforms to fintech integrations, these applications showcase my experience building scalable Android and iOS solutions using Flutter and Swift.
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto auto-rows-fr">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 max-w-7xl mx-auto auto-rows-fr">
                     {DATA.projects.map((project, id) => (
                         <BlurFade
                             key={project.title}

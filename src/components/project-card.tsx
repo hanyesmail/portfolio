@@ -76,7 +76,11 @@ export function ProjectCard({
               muted
               playsInline
               // className="w-full h-48 object-fit"
-              className="w-full h-90 object-contain rounded-lg"
+              // className="w-full h-100 object-contain rounded-lg"
+              className="w-full max-h-[450px] object-contain"
+              preload="metadata"
+              onMouseEnter={(e) => e.currentTarget.play()}
+              onMouseLeave={(e) => e.currentTarget.pause()}
             />
           ) : image ? (
             <ProjectImage src={image} alt={title} />

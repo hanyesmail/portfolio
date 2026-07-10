@@ -10,6 +10,8 @@ import HackathonsSection from "@/components/section/hackathons-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -36,11 +38,28 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.subTitle}
               />
+              <br></br>
               <BlurFadeText
                 className="text-muted-foreground max-w-[600px] md:text-sm sm:text-s"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <div className="flex flex-wrap gap-3 pt-4">
+                <Button asChild size="lg">
+                  <a href="/Hany_Mahmoud_Senior_Mobile_Software_Engineer_CV.pdf" download>
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Resume (PDF)
+                  </a>
+                </Button>
+                <Button variant="outline" asChild size="lg">
+                  <a
+                    href={DATA.contact.social.LinkedIn.url}
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+                </Button>
+              </div>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
@@ -54,7 +73,7 @@ export default function Page() {
       <section id="about">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <h2 className="text-xl font-bold">About</h2>
+            <h2 className="text-xl font-bold">Professional Summary</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
@@ -68,7 +87,7 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="text-xl font-bold">Professional Experience</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
             <WorkSection />
@@ -126,7 +145,7 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h2 className="text-xl font-bold">Technical Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
             {DATA.skills.map((skill, id) => (
@@ -150,11 +169,11 @@ export default function Page() {
           <HackathonsSection />
         </BlurFade>
       </section> */}
-      {/* <section id="contact">
+      <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ContactSection />
         </BlurFade>
-      </section> */}
+      </section>
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { Apple, Github, HomeIcon, NotebookIcon, Search, Wallet, X } from "lucide-react";
+import { Apple, Github, HomeIcon, NotebookIcon, Phone, Search, Wallet, X } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -11,6 +11,7 @@ import { Docker } from "@/components/ui/svgs/docker";
 import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { email } from "zod";
 
 export const DATA = {
   name: "Hany Mahmoud",
@@ -59,6 +60,8 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "tel:+201061253785", icon: Phone, label: "+201061253785" },
+    { href: "mailto:hany.mahmoud@outlook.com", icon: Icons.email, label: "hany.mahmoud@outlook.com" },
   ],
   contact: {
     email: "hany.mahmoud@outlook.com",
@@ -68,7 +71,7 @@ export const DATA = {
         name: "GitHub",
         url: "https://dub.sh/dillion-github",
         icon: Icons.github,
-        navbar: true,
+        navbar: false,
       },
       LinkedIn: {
         name: "LinkedIn",
