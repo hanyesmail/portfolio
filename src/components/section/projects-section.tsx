@@ -26,7 +26,7 @@ export default function ProjectsSection() {
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Check out my latest work</h2>
                         <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
                             I&apos;ve worked on a variety of projects, from simple
-                            websites to complex web applications. Here are a few of my
+                            applications to complex applications. Here are my
                             favorites.
                         </p>
                     </div>
