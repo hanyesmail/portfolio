@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { DATA } from "@/data/resume";
+import {
+  Mail,
+  Phone,
+  Linkedin,
+  Github,
+  FileDown,
+} from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -28,15 +35,26 @@ export default function ContactSection() {
         </p>
         <Link
           href={`mailto:${DATA.contact.email}`}
-          className="hover:text-primary transition-colors"
+          className="flex items-center gap-2 hover:text-primary transition-colors"
         >
-          📧 {DATA.contact.email}
+          <Mail className="h-5 w-5" />
+          {DATA.contact.email}
         </Link>
         <Link
           href="tel:+201061253785"
-          className="hover:text-primary transition-colors"
+          className="flex items-center gap-2 hover:text-primary transition-colors"
         >
-          📱 +20 106 125 3785
+          <Phone className="h-5 w-5" />
+          +20 106 125 3785
+        </Link>
+        <Link
+          href={DATA.contact.social.LinkedIn.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:text-primary transition-colors"
+        >
+          <Linkedin className="h-5 w-5" />
+          LinkedIn
         </Link>
       </div>
     </div>

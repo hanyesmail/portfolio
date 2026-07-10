@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { Apple, Github, HomeIcon, NotebookIcon, Phone, Search, Wallet, X } from "lucide-react";
+import { Apple, Github, HomeIcon, NotebookIcon, Phone, Search, Wallet, Linkedin } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -60,8 +60,8 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "tel:+201061253785", icon: Phone, label: "+201061253785" },
     { href: "mailto:hany.mahmoud@outlook.com", icon: Icons.email, label: "hany.mahmoud@outlook.com" },
+    { href: "tel:+201061253785", icon: Phone, label: "+201061253785" },
   ],
   contact: {
     email: "hany.mahmoud@outlook.com",

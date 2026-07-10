@@ -51,14 +51,14 @@ export default function Page() {
                     Download Resume (PDF)
                   </a>
                 </Button>
-                <Button variant="outline" asChild size="lg">
+                {/* <Button variant="outline" asChild size="lg">
                   <a
                     href={DATA.contact.social.LinkedIn.url}
                     target="_blank"
                   >
                     LinkedIn
                   </a>
-                </Button>
+                </Button> */}
               </div>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
